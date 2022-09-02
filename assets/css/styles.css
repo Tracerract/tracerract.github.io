@@ -1,0 +1,96 @@
+:root {
+    /*   Variables */
+    --dark-color: #202526;
+    --light-color: #aeb1b3;
+    --main-color: #353D40;
+    --size: 75vh;
+    --nametag: 10rem;
+    --nametag-text: 3rem;
+    --nametag-color: FireBrick;
+}
+/* Generic attributes */
+* {
+    margin: 0;
+    text-align: center;
+    transition: all .25s ease-in-out;
+}
+body {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+header {
+  height: 10rem;
+}
+/* Navbar and Footer */
+.icon-bar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+.icon {
+    display: flex;
+    align-items: center;
+  border-radius: 8px;
+  transition: 100ms;
+}
+.icon:hover {
+    background-color: var(--main-color);
+}
+.icon a {
+    display: block;
+    padding: 2rem 2rem;
+    overflow: hidden;
+}
+/* Single section display */
+#main .panel {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+#main .inactive {
+  opacity: 0;
+  display: none;
+}
+/* Nametag */
+#welcome-section {
+  width: calc(4 * var(--nametag));
+  margin: 0 auto;
+  padding: 3rem;
+  overflow: hidden;
+  background-color: var(--main-color);
+  border-radius: 15px;
+}
+.nametag {
+  height: calc(2.5 * var(--nametag));
+  width: calc(4 * var(--nametag));
+  margin: 0 auto;
+  font-size: var(--nametag-text);
+  color: var(--light-color);
+  background-color: var(--nametag-color);
+  border-radius: 15px;
+}
+.nametag h1{
+  font-size: calc(var(--nametag-text) * 2.5);
+}
+.nametag-top {
+  height: calc(1.1 * var(--nametag));
+  text-transform: uppercase;
+  line-height: 1;
+}
+.nametag-write {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  border-radius: 15px;
+  margin: 0 .6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: calc(1.25 * var(--nametag));
+  font-family: 'Brush Script MT', cursive;
+  font-size: calc(var(--nametag-text) * 1.25);
+}
