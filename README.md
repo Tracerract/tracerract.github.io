@@ -10,11 +10,11 @@ Implemented Features:
     -Customized landing page
     -Profile Links
     -Navigation (No destinations available yet though)
+    -Domain uses personal domain
 
 
 Planned features:
 
-    -Domain uses personal domain
     -Resume hosted with simple download button
     -Project Section
       -Showcase several recent projects

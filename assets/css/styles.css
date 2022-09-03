@@ -4,10 +4,12 @@
     --light-color: #aeb1b3;
     --main-color: #353D40;
     --size: 75vh;
-    --nametag: 10rem;
-    --nametag-text: 3rem;
+    --nametag: 7.5rem;
+    --nametag-text: calc((var(--nametag) / 3.33));
     --nametag-color: FireBrick;
+    --nametag-color2: Navy;
 }
+
 /* Generic attributes */
 * {
     margin: 0;
@@ -26,6 +28,7 @@ a {
 header {
   height: 10rem;
 }
+
 /* Navbar and Footer */
 .icon-bar {
     display: flex;
@@ -47,6 +50,7 @@ header {
     padding: 2rem 2rem;
     overflow: hidden;
 }
+
 /* Single section display */
 #main .panel {
   opacity: 1;
@@ -56,6 +60,7 @@ header {
   opacity: 0;
   display: none;
 }
+
 /* Nametag */
 #welcome-section {
   width: calc(4 * var(--nametag));
@@ -73,6 +78,10 @@ header {
   color: var(--light-color);
   background-color: var(--nametag-color);
   border-radius: 15px;
+  transition: background-color 3s ease-in-out;
+}
+.nametag:hover {
+  background-color: var(--nametag-color2);
 }
 .nametag h1{
   font-size: calc(var(--nametag-text) * 2.5);
@@ -93,4 +102,24 @@ header {
   height: calc(1.25 * var(--nametag));
   font-family: 'Brush Script MT', cursive;
   font-size: calc(var(--nametag-text) * 1.25);
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 768px) {
+  :root {
+    /*   Variables */
+    --nametag: 5rem;
+}
+  #welcome-section {
+    padding: 1rem;
+  }
+  header {
+    display: none;
+}
+  .icon:active {
+    background-color: var(--main-color);
+}
+.nametag:active {
+  background-color: var(--nametag-color2);
+}
 }
