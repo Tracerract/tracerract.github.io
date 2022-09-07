@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="keywords" content="Chris Bristow, github, profile, portfolio, webpage">
+    <meta name="keywords" content="Chris Bristow, Tracerract, LinkedIn, CodePen, Github, profile, portfolio, webpage">
     <meta name="author" content="Chris Bristow">
     <meta name="github" content="Tracerract">
     <meta property="og:url" content="">
@@ -14,42 +14,77 @@
     <meta property="og:site_name" content="Chris Bristow | Portfolio">
     <meta property="og:title" content="Chris Bristow | Portfolio">
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/main.js" crossorigin=""></script>
 </head>
-    
 
 <body>
-    <header id="header" >
-    </header>
-     <nav id="navbar" class="icon-bar">
-          <div class="navbar icon"><a href="#welcome-section">Hello</a></div>
-          <div class="navbar icon"><a href="#projects">Projects</a></div>
-          <div class="navbar icon"><a href="#about">About</a></div>
-      </nav>
-     <main id="main">
-          <section id="welcome-section" class="panel intro">
-              <div class="nametag">
-                  <div class="nametag-top">
-                      <h1>Hello</h1>
-                      <p>My name is</p>
-                  </div>
-                  <div class="nametag-write">
-                    <p>Chris</p>
-                    <p>a.k.a. Tracerract</p>
-                  </div>
-              </div>
-          </section>
-          <section id="projects" class="panel projects inactive"></section>
-          <section id="about" class="panel about inactive"></section>
-    </main>
-    
-      <footer id="footer" class="icon-bar">
-          <div class="footer icon"><a href="https://github.com/Tracerract" id="profile-link" target="_blank">Github</a>
-          </div>
-          <div class="footer icon"><a href="https://codepen.io/tracerract" id="profile-link" target="_blank">CodePen</a>
-          </div>
-          <div class="footer icon"><a href="https://www.linkedin.com/in/tracerract" id="profile-link" target="_blank">LinkedIn</a>
-          </div>
-      </footer>
-  </body>
+    <div class="wrapper">
+        <nav id="navbar" class="icon-bar">
+            <div class="navbar icon"><a href="#welcome-section" class="navlink">Hello</a></div>
+            <div class="navbar icon"><a href="#projects" class="navlink">Projects</a></div>
+            <div class="navbar icon"><a href="#about" class="navlink">About</a></div>
+        </nav>
+        <main id="main">
+            <section id="welcome-section" class="panel intro">
+                <div class="nametag">
+                    <div class="nametag-top">
+                        <h1>Hello</h1>
+                        <p>My name is</p>
+                    </div>
+                    <div class="nametag-write">
+                        <p>Chris</p>
+                        <p>a.k.a. Tracerract</p>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="panel projects inactive">
+                <h2>My Projects</h2>
+                <div class="project-container">
+                    <a href="https://www.freecodecamp.org/certification/Tracerract/responsive-web-design"
+                        alt="FreeCodeCamp Certification">
+                        <div class="project-tile">Responsive Web Design<div class="project-description">I recently
+                                completed this certification through FreeCodeCamp by submitting five
+                                projects.<br><br>For these projects I focused on utilizing older web styling but
+                                incorporating responsive web design elements in these five projects.</div>
+                        </div>
+                    </a>
+                    <a href="https://codepen.io/tracerract/full/KKRPvRW" alt="2048 on CodePen">
+                        <div class="project-tile">2048 Game<div class="project-description">I play simple phone games
+                                like this to pass time while waiting at places, and wanted a version that wasn't
+                                constantly playing ads, so I made it.<br><br>I initially followed a tutorial, but have
+                                refactored the code to fit inside one file for CodePen.</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-space"></div>
+            </section>
+            <section id="about" class="panel about inactive">
+                <div class="brief">
+                    <h2>About Me</h2>
+                    <div class="content">
+                        <p>Technology has always been a huge part of my life. During my time working with Starbucks, I
+                            realized I enjoy being able to make things easier both for myself, and for other
+                            people.<br><br>For me, coding is another tool to aid me in my endless pursuit of making
+                            things easier for everyone.</p><br>
+                        <p>If you have any feedback, or you'd like to contact me, feel free to reach out on any of the
+                            profile links in the section below:</p>
+                    </div>
+                </div>
 
-  </html>
+            </section>
+        </main>
+        <footer id="footer" class="icon-bar">
+            <div class="footer icon"><a href="https://github.com/Tracerract" id="profile-link"
+                    target="_blank">Github</a>
+            </div>
+            <div class="footer icon"><a href="https://codepen.io/tracerract" id="profile-link"
+                    target="_blank">CodePen</a>
+            </div>
+            <div class="footer icon"><a href="https://www.linkedin.com/in/tracerract" id="profile-link"
+                    target="_blank">LinkedIn</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

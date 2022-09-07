@@ -11,17 +11,17 @@ Implemented Features:
     -Profile Links
     -Navigation (No destinations available yet though)
     -Domain uses personal domain
-
-
-Planned features:
-
-    -Resume hosted with simple download button
     -Project Section
       -Showcase several recent projects
       -Showcase most recent accomplishment
     -About Section
       -Basic personal info
     -JS to collapse sections and allow sections to be cycled instead of scrolled
+
+
+Planned features:
+
+    -Resume hosted with simple download button
     -Turn site into PWA
       -Allows simple projects to become installed apps
       -Enables quick access to resume/profiles
