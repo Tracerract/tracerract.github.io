@@ -32,7 +32,6 @@ function navigation() {
         })
     }
 }
-navigation()
 
 // initialize the loaded frame
 function initialize(val) {
@@ -59,4 +58,5 @@ function initialize(val) {
 window.addEventListener('DOMContentLoaded', function () {
     // remove panels without delay
     initialize()
+    navigation()
 })
