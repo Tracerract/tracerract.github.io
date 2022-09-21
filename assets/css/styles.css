@@ -139,7 +139,7 @@ height: 10rem;
   flex-direction: column;
   justify-content: center;
   height: calc(1.25 * var(--nametag));
-  font-family: 'Brush Script MT', cursive;
+  font-family: 'Indie Flower', 'Brush Script MT', cursive;
   font-size: calc(var(--nametag-text) * 1.25);
 }
 
