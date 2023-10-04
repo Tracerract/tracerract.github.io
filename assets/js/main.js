@@ -14,6 +14,41 @@ function toggle(a, b = true) {
         setTimeout(() => { classRemove(a, 'fade') }, 1000)
     }
 }
+// Theme toggle function
+let theme = main
+function toggleTheme(a) {
+  classRemove(document.getElementById('body'), 'github')
+  classRemove(document.getElementById('body'), 'codepen')
+  classRemove(document.getElementById('body'), 'linkedin')
+  classRemove(document.getElementById('body'), 'main')
+  if (a == 'github') {
+  classRemove(document.getElementById('body'), 'codepen')
+  classRemove(document.getElementById('body'), 'linkedin')
+  classRemove(document.getElementById('body'), 'main')
+    classAdd(document.getElementById('body'), 'github')
+    }
+  if (a == 'codepen') {
+  classRemove(document.getElementById('body'), 'github')
+  classRemove(document.getElementById('body'), 'linkedin')
+  classRemove(document.getElementById('body'), 'main')
+    classAdd(document.getElementById('body'), 'codepen')
+  }
+  if (a == 'linkedin') {
+  classRemove(document.getElementById('body'), 'github')
+  classRemove(document.getElementById('body'), 'codepen')
+  classRemove(document.getElementById('body'), 'main')
+    classAdd(document.getElementById('body'), 'linkedin')
+  }
+  if (a == 'main') {
+  classRemove(document.getElementById('body'), 'github')
+  classRemove(document.getElementById('body'), 'codepen')
+  classRemove(document.getElementById('body'), 'linkedin')
+    classAdd(document.getElementById('body'), 'main')
+  }
+  // if (a == 'github') {
+  //   document.getElementById('body').style.backgroundColor = 'forestgreen'
+  // } else {return}
+}
 // Get lists of elements
 const navLinks = document.getElementsByClassName('navlink')
 const panels = document.getElementsByClassName('panel')

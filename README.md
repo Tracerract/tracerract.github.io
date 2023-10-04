@@ -16,9 +16,13 @@ Implemented Features:
     -About Section
       -Basic personal info
     -JS to collapse sections and allow sections to be cycled instead of scrolled
+    -alternating themes based on which links are currently selected, i.e. github link or linkedin link
 
 
 Planned features:
 
-    -Update Portfolio to utilize React instead of pure JS
-    -Add a feature for switching themes
+    -Icons for Navbar and Menu
+    -"My name is" sticker converted to SVG
+    -More in depth examples of the themes after they are transitioned to
+    -landing page is one main link that has it's text rearranged depending on which link is active
+    -Drop out the freecodecamp cert project for something newer and more relevant

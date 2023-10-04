@@ -20,12 +20,12 @@
     <script src="assets/js/main.js" type="text/javascript" crossorigin=""></script>
 </head>
 
-<body>
+<body id="body">
     <div class="wrapper">
         <nav id="navbar" class="icon-bar">
-            <div class="navbar icon"><a href="#welcome-section" class="navlink">Hello</a></div>
-            <div class="navbar icon"><a href="#projects" class="navlink">Projects</a></div>
-            <div class="navbar icon"><a href="#about" class="navlink">About</a></div>
+            <div class="navbar icon"><a href="#welcome-section" class="navlink"  onclick="toggleTheme('main')">Hello</a></div>
+            <div class="navbar icon"><a href="#projects" class="navlink"  onclick="toggleTheme('main')">Projects</a></div>
+            <div class="navbar icon"><a href="#about" class="navlink"  onclick="toggleTheme('main')">About</a></div>
         </nav>
         <main id="main">
             <section id="welcome-section" class="panel intro">
@@ -41,18 +41,18 @@
                 </div>
             </section>
             <section id="projects" class="panel projects inactive">
-                <h2>My Projects</h2>
+                <h2>My Projects</h2><br>
                 <div class="project-container">
                     <a href="https://www.freecodecamp.org/certification/Tracerract/responsive-web-design"
                         alt="FreeCodeCamp Certification">
-                        <div class="project-tile">Responsive Web Design<div class="project-description">I
+                        <div class="project-tile"><h4 class="project-title">Responsive Web Design</h4><div class="project-description">I
                                 completed this certification through FreeCodeCamp by submitting five
                                 projects.<br><br>For these projects I focused on utilizing older web styling but
                                 incorporating responsive web design elements in these five projects.</div>
                         </div>
                     </a>
                     <a href="https://codepen.io/tracerract/full/KKRPvRW" alt="2048 on CodePen">
-                        <div class="project-tile">2048 Game<div class="project-description">I play simple phone games
+                        <div class="project-tile"><h4 class="project-title">2048 Game</h4><div class="project-description">I play simple phone games
                                 like this to pass time while waiting on things, and wanted a version that wasn't
                                 constantly playing ads, so I made it.<br><br>I initially followed a tutorial, but have
                                 refactored the code to fit inside one file for CodePen.</div>
@@ -63,28 +63,48 @@
             </section>
             <section id="about" class="panel about inactive">
                 <div class="brief">
-                    <h2>About Me</h2>
+                    <h2>About Me</h2><br>
                     <div class="content">
-                        <p>Technology has always been a huge part of my life. Throughout my recent careers, I've
+                        <p>Technology has always been a huge part of my life. Over time, I've
                             realized I enjoy being able to make things easier both for myself, and for other
-                            people.<br><br>For me, coding is another tool to aid me in my endless pursuit of making
-                            things easier for everyone.</p><br>
-                        <p>If you have any feedback, or you'd like to contact me, feel free to reach out on any of the
-                            profile links in the section below:</p>
+                            people.<br><br>I have all of my certifications on my LinkedIn. My most recent one that I'm rather proud of is the Front-End Engineer Career Path offered by Codecademy.</p><br>
+                        <p>For any feedback, or to contact me, please reach out on any of the
+                            profile links in the section below.</p>
                     </div>
                 </div>
 
             </section>
+            <section id="github" class="panel about inactive">
+                <div class="brief">
+                    <div class="content"><a href="https://github.com/Tracerract" id="github-link"
+                    target="_blank">github.com/Tracerract</a>
+                    </div>
+                </div>
+            </section>
+            <section id="codepen" class="panel about inactive">
+                <div class="brief">
+                    <div class="content"><a href="https://codepen.io/tracerract" id="codepen-link"
+                    target="_blank">codepen.io/tracerract</a>
+                    </div>
+                </div>
+            </section>
+            <section id="linkedin" class="panel about inactive">
+                <div class="brief">
+                    <div class="content"><a href="https://www.linkedin.com/in/tracerract" id="linkedin-link"
+                    target="_blank">linkedin.com/in/tracerract</a>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer id="footer" class="icon-bar">
-            <div class="footer icon"><a href="https://github.com/Tracerract" id="profile-link"
-                    target="_blank">Github</a>
+            <div class="footer icon"><a href="#github" id="profile-link"  class="navlink"
+                    target="_blank"  onclick="toggleTheme('github')">Github</a>
             </div>
-            <div class="footer icon"><a href="https://codepen.io/tracerract" id="profile-link"
-                    target="_blank">CodePen</a>
+            <div class="footer icon"><a href="#codepen" id="profile-link"  class="navlink"
+                    target="_blank"  onclick="toggleTheme('codepen')">CodePen</a>
             </div>
-            <div class="footer icon"><a href="https://www.linkedin.com/in/tracerract" id="profile-link"
-                    target="_blank">LinkedIn</a>
+            <div class="footer icon"><a href="#linkedin" id="profile-link"  class="navlink"
+                    target="_blank"  onclick="toggleTheme('linkedin')">LinkedIn</a>
             </div>
         </footer>
     </div>
