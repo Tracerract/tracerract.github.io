@@ -15,39 +15,36 @@ function toggle(a, b = true) {
     }
 }
 // Theme toggle function
-let theme = main
+let theme = 'main'
 function toggleTheme(a) {
   classRemove(document.getElementById('body'), 'github')
   classRemove(document.getElementById('body'), 'codepen')
   classRemove(document.getElementById('body'), 'linkedin')
   classRemove(document.getElementById('body'), 'main')
-  if (a == 'github') {
+  if (a == '#github') {
   classRemove(document.getElementById('body'), 'codepen')
   classRemove(document.getElementById('body'), 'linkedin')
   classRemove(document.getElementById('body'), 'main')
     classAdd(document.getElementById('body'), 'github')
     }
-  if (a == 'codepen') {
+  if (a == '#codepen') {
   classRemove(document.getElementById('body'), 'github')
   classRemove(document.getElementById('body'), 'linkedin')
   classRemove(document.getElementById('body'), 'main')
     classAdd(document.getElementById('body'), 'codepen')
   }
-  if (a == 'linkedin') {
+  if (a == '#linkedin') {
   classRemove(document.getElementById('body'), 'github')
   classRemove(document.getElementById('body'), 'codepen')
   classRemove(document.getElementById('body'), 'main')
     classAdd(document.getElementById('body'), 'linkedin')
   }
-  if (a == 'main') {
+  if (a == '#welcome-section' || a == '#projects' || a == '#about') {
   classRemove(document.getElementById('body'), 'github')
   classRemove(document.getElementById('body'), 'codepen')
   classRemove(document.getElementById('body'), 'linkedin')
     classAdd(document.getElementById('body'), 'main')
   }
-  // if (a == 'github') {
-  //   document.getElementById('body').style.backgroundColor = 'forestgreen'
-  // } else {return}
 }
 // Get lists of elements
 const navLinks = document.getElementsByClassName('navlink')
@@ -63,6 +60,7 @@ function navigation() {
             if (window.location.hash != href) {
                 window.location.hash = href
                 initialize(i)
+              toggleTheme(href)
             }
         })
     }
